@@ -7,41 +7,21 @@ export default function GraisseProductDetail() {
   const { productId } = useParams();
 
   const products = {
-    "dinoil-grease-calcium": {
-      name: "DINOIL GREASE CALCIUM NLGI 2",
-      code: "NLGI 2",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F367800b539f442f7b8aca37c33d3b377%2Ffaa6d4fa22254c6a977ac7c1f745dc12?format=webp&width=800",
-      category: "Graisse Calcium",
-      description:
-        "Graisse à base d'huile minérale de haute qualité. Protection accrue des pièces soumises à des efforts mécaniques en milieux humides. Améliore les propriétés mécaniques (résistance à la traction) et la résistance aux charges lourdes à basse vitesse. Températures de faibles à moyennes.",
-      specifications: [
-        "Grade: NLGI 2",
-        "Bonne résistance à l'eau",
-        "Protection anti‑corrosion",
-        "Applications châssis et roulements"
-      ],
-      packages: ["900 g", "4 kg", "16 kg"],
-      features: [
-        "Haute adhésivité",
-        "Protection milieux humides",
-        "Charges lourdes, basse vitesse",
-        "Usage auto et industriel"
-      ]
-    },
     "dinoil-grease-graphite": {
-      name: "DINOIL GREASE GRAPHITE NLGI 2",
-      code: "NLGI 2",
+      name: "DINOIL GRAPHITE GREASE",
+      code: "4623",
       image: "https://cdn.builder.io/api/v1/image/assets%2F367800b539f442f7b8aca37c33d3b377%2F78ecb8ac3d2d49649d7c0570a53818a8?format=webp&width=800",
       category: "Graisse Graphite",
       description:
-        "Graisse spéciale à base de savon graphite, renforcée au disulfure de molybdène. Lubrification optimale pour roues et roulements fonctionnant dans des conditions sévères. Plage de température d'utilisation: −20°C à +230°C.",
+        "Graisse spéciale à base de savons de graphite, enrichie en bisulfure de molybdène. Lubrification optimale pour roues et roulements opérant en conditions sévères. Plage d'utilisation: −20°C à +230°C.",
       specifications: [
+        "ISO 6743‑9",
+        "DIN 51825",
+        "DIN 51502",
         "Base: Graphite + MoS₂",
-        "Plage: −20°C à +230°C",
-        "Excellente tenue aux charges",
-        "Réduction du frottement"
+        "Température: −20°C à +230°C"
       ],
-      packages: ["900 g", "4 kg", "16 kg"],
+      packages: ["850 g", "4 kg", "16 kg", "180 kg"],
       features: [
         "Très haute pression",
         "Faible friction",
@@ -50,24 +30,44 @@ export default function GraisseProductDetail() {
       ]
     },
     "dinoil-grease-lithium": {
-      name: "DINOIL GREASE LITHIUM NLGI 2",
-      code: "NLGI 2",
+      name: "DINOIL LITHIUM GREASE 00/0/1/2/3",
+      code: "4630",
       image: "https://cdn.builder.io/api/v1/image/assets%2F367800b539f442f7b8aca37c33d3b377%2F0196465a665d405f90ed6294a801ff75?format=webp&width=800",
       category: "Graisse Lithium",
       description:
-        "Graisse multifonctionnelle formulée avec savons de lithium et huile minérale raffinée. Adaptée à la lubrification générale des véhicules et des roulements de machines industrielles en conditions de charge moyenne et températures élevées. Très bonne résistance à l'eau.",
+        "Graisse multifonctionnelle à base de savons de lithium et d'huile minérale hautement raffinée. Adaptée à la lubrification générale des véhicules et des roulements de machines industrielles en charge moyenne et à températures élevées. Haute résistance à l'eau.",
       specifications: [
-        "Grade: NLGI 2",
-        "Usage polyvalent",
-        "Haute résistance à l'eau",
-        "Températures élevées"
+        "ISO 6743‑9",
+        "DIN 51825",
+        "DIN 51502",
+        "Grades disponibles: 00/0/1/2/3"
       ],
-      packages: ["900 g", "4 kg", "16 kg"],
+      packages: ["850 g", "4 kg", "16 kg", "180 kg"],
       features: [
         "Polyvalente véhicules/industrie",
         "Bonne stabilité mécanique",
         "Protection anti‑corrosion",
         "Longue durée de service"
+      ]
+    },
+    "dinoil-grease-calcium": {
+      name: "DINOIL MULTI PURPOSE CALCIUM 1/2/3",
+      code: "4647",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F367800b539f442f7b8aca37c33d3b377%2Ffaa6d4fa22254c6a977ac7c1f745dc12?format=webp&width=800",
+      category: "Graisse Calcium",
+      description:
+        "Graisse à base d'huile minérale de haute qualité. Renforce la protection des pièces soumises à de fortes contraintes en environnements humides. Améliore la résistance à la traction et la tenue aux charges lourdes à faible vitesse, pour températures de basses à moyennes.",
+      specifications: [
+        "ISO 6743‑9",
+        "DIN 51825",
+        "DIN 51502"
+      ],
+      packages: ["850 g", "4 kg", "16 kg", "180 kg"],
+      features: [
+        "Protection en milieux humides",
+        "Charges lourdes, basse vitesse",
+        "Anti‑corrosion",
+        "Usage auto et industriel"
       ]
     }
   } as const;
@@ -126,7 +126,7 @@ export default function GraisseProductDetail() {
             <div className="w-32 h-1 bg-gradient-to-r from-[#BE941B] via-white to-[#BE941B] mx-auto mb-8 rounded-full"></div>
 
             <div className="inline-flex items-center bg-[#02173C]/20 border border-[#BE941B]/30 rounded-full px-6 py-2">
-              <span className="text-[#BE941B] font-bold text-sm uppercase tracking-widest">{product.code}</span>
+              <span className="text-[#BE941B] font-bold text-sm uppercase tracking-widest">Code: {product.code}</span>
             </div>
           </div>
         </div>
