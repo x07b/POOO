@@ -12,7 +12,29 @@ export default function Graisse() {
     pdfUrl?: string;
   };
 
-  const products: Product[] = [];
+  const products: Product[] = [
+    {
+      id: "grease-graphite",
+      name: "DINOIL GREASE GRAPHITE",
+      code: "4623",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fe98689421e434387bc8e35ec01be1ffb%2F2754313e87c1475dbeceaaea783f16ae?format=webp&width=800",
+    },
+    {
+      id: "grease-lithium",
+      name: "DINOIL GREASE LITHIUM 00/0/1/2/3",
+      code: "4630",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fe98689421e434387bc8e35ec01be1ffb%2F2391d9b566b94b0cb70103d2ede485f7?format=webp&width=800",
+    },
+    {
+      id: "grease-calcium",
+      name: "DINOIL GREASE CALCIUM 1/2/3",
+      code: "4647",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fe98689421e434387bc8e35ec01be1ffb%2Fac39d8bb7a5a4af6875446f3ae72d12d?format=webp&width=800",
+    },
+  ];
 
   const features = [
     { icon: Shield, title: "Protection Extrême", description: "Anti-usure, anti-corrosion et anti-oxydation" },
