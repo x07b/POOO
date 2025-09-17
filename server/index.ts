@@ -17,6 +17,14 @@ export function createServer() {
 
   app.get("/api/demo", handleDemo);
 
+  // Rewrite Builder preview checks to root so Vite serves index.html
+  app.use((req, _res, next) => {
+    if (req.path === "/__builder_ping" || req.path === "/index.html") {
+      req.url = "/";
+    }
+    next();
+  });
+
   // Pass-through for non-API routes when used as a sub-app (e.g., in Vite dev)
   // - Unknown API routes: return 404 JSON
   // - Non-API routes: call next() so Vite can serve index.html and assets
