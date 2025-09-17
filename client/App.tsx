@@ -76,7 +76,7 @@ const App = () => (
           <Route path="/produits/moto-sea-engines/:productId" element={<MotoSeaEnginesProductDetail />} />
           <Route path="/produits/lubrifiants-industriels" element={<div>Lubrifiants Industriels</div>} />
           <Route path="/produits/machines-agricoles" element={<div>Machines Agricoles</div>} />
-          <Route path="/produits/boites-automatiques" element={<div>Boites Automatiques</div>} />
+          <Route path="/produits/boites-automatiques" element={<BoitesAutomatiques />} />
           <Route path="/produits/boite-manuelle" element={<div>Boite Manuelle</div>} />
           <Route path="/produits/antigel" element={<Antigel />} />
           <Route path="/produits/antigel/:productId" element={<AntigelProductDetail />} />
