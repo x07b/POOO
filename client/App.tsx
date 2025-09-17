@@ -31,6 +31,8 @@ import MultigradeProductDetail from "./pages/categories/MultigradeProductDetail"
 import MotoSeaEngines from "./pages/categories/MotoSeaEngines";
 import MotoSeaEnginesProductDetail from "./pages/categories/MotoSeaEnginesProductDetail";
 import PoidsLourdsProductDetail from "./pages/categories/PoidsLourdsProductDetail";
+import Antigel from "./pages/categories/Antigel";
+import AntigelProductDetail from "./pages/categories/AntigelProductDetail";
 
 const queryClient = new QueryClient();
 
@@ -72,7 +74,8 @@ const App = () => (
           <Route path="/produits/machines-agricoles" element={<div>Machines Agricoles</div>} />
           <Route path="/produits/boites-automatiques" element={<div>Boites Automatiques</div>} />
           <Route path="/produits/boite-manuelle" element={<div>Boite Manuelle</div>} />
-          <Route path="/produits/antigel" element={<div>Antigel</div>} />
+          <Route path="/produits/antigel" element={<Antigel />} />
+          <Route path="/produits/antigel/:productId" element={<AntigelProductDetail />} />
           <Route path="/produits/graisse" element={<div>Graisse</div>} />
           {/* Legacy routes for existing functionality */}
           <Route path="/produits/additifs" element={<Additifs />} />
