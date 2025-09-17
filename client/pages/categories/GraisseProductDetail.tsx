@@ -6,7 +6,56 @@ import { ChevronLeft, ChevronRight, Wrench, Star, Check, Package, FileText } fro
 export default function GraisseProductDetail() {
   const { productId } = useParams();
 
-  const products = {} as Record<string, {
+  const products = {
+    "grease-graphite": {
+      name: "DINOIL GREASE GRAPHITE",
+      code: "4623",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fe98689421e434387bc8e35ec01be1ffb%2F2754313e87c1475dbeceaaea783f16ae?format=webp&width=800",
+      description:
+        "Special grease based on graphite soap and fortified with molybdenum disulfide. Designed to guarantee optimal lubrication and for application in all kinds of wheels and bearings of vehicles operating under severe conditions. Temperature range for use between -20°C and +230°C.",
+      specifications: ["ISO 6743-9", "DIN 51825", "DIN 51502", "NLGI 2"],
+      packages: ["850gr", "4kg", "16kg", "180kg"],
+      features: [
+        "Fortified with molybdenum disulfide (MoS₂)",
+        "Optimal lubrication for wheels and bearings",
+        "Performs under severe operating conditions",
+        "Wide temperature range: -20°C to +230°C"
+      ],
+    },
+    "grease-lithium": {
+      name: "DINOIL GREASE LITHIUM 00/0/1/2/3",
+      code: "4630",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fe98689421e434387bc8e35ec01be1ffb%2F2391d9b566b94b0cb70103d2ede485f7?format=webp&width=800",
+      description:
+        "Multifunctional grease formulated with lithium soaps and highly refined mineral oil. Suitable for the general lubrication of vehicles. Recommended for the lubrication of bearings in operating industrial machinery under medium load conditions and elevated temperatures. High water resistance.",
+      specifications: ["ISO 6743-9", "DIN 51825", "DIN 51502", "NLGI 00/0/1/2/3"],
+      packages: ["850gr", "4kg", "16kg", "180kg"],
+      features: [
+        "General purpose, multifunctional grease",
+        "High water resistance",
+        "For bearings under medium loads and elevated temperatures",
+        "Excellent mechanical stability"
+      ],
+    },
+    "grease-calcium": {
+      name: "DINOIL GREASE CALCIUM 1/2/3",
+      code: "4647",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fe98689421e434387bc8e35ec01be1ffb%2Fac39d8bb7a5a4af6875446f3ae72d12d?format=webp&width=800",
+      description:
+        "Grease based on high quality mineral oil. Increases protection for mechanical parts subjected to high mechanical stress in high humidity environments. Improves mechanical properties such as tensile strength and resistance to heavy loads at low speed, for operation at low to medium temperatures.",
+      specifications: ["ISO 6743-9", "DIN 51825", "DIN 51502", "NLGI 1/2/3"],
+      packages: ["850gr", "4kg", "16kg", "180kg"],
+      features: [
+        "Enhanced protection in high humidity",
+        "Resists heavy loads at low speed",
+        "Suitable for low to medium temperature service",
+        "Good adhesion and anti-wear properties"
+      ],
+    },
+  } as Record<string, {
     name: string;
     code?: string;
     image?: string;

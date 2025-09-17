@@ -35,6 +35,8 @@ import Graisse from "./pages/categories/Graisse";
 import GraisseProductDetail from "./pages/categories/GraisseProductDetail";
 import Antigel from "./pages/categories/Antigel";
 import AntigelProductDetail from "./pages/categories/AntigelProductDetail";
+import BoitesAutomatiques from "./pages/categories/BoitesAutomatiques";
+import BoitesAutomatiquesProductDetail from "./pages/categories/BoitesAutomatiquesProductDetail";
 
 const queryClient = new QueryClient();
 
@@ -74,7 +76,8 @@ const App = () => (
           <Route path="/produits/moto-sea-engines/:productId" element={<MotoSeaEnginesProductDetail />} />
           <Route path="/produits/lubrifiants-industriels" element={<div>Lubrifiants Industriels</div>} />
           <Route path="/produits/machines-agricoles" element={<div>Machines Agricoles</div>} />
-          <Route path="/produits/boites-automatiques" element={<div>Boites Automatiques</div>} />
+          <Route path="/produits/boites-automatiques" element={<BoitesAutomatiques />} />
+          <Route path="/produits/boites-automatiques/:productId" element={<BoitesAutomatiquesProductDetail />} />
           <Route path="/produits/boite-manuelle" element={<div>Boite Manuelle</div>} />
           <Route path="/produits/antigel" element={<Antigel />} />
           <Route path="/produits/antigel/:productId" element={<AntigelProductDetail />} />
