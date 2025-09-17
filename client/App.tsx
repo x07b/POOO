@@ -37,6 +37,8 @@ import Antigel from "./pages/categories/Antigel";
 import AntigelProductDetail from "./pages/categories/AntigelProductDetail";
 import BoitesAutomatiques from "./pages/categories/BoitesAutomatiques";
 import BoitesAutomatiquesProductDetail from "./pages/categories/BoitesAutomatiquesProductDetail";
+import BoiteManuelle from "./pages/categories/BoiteManuelle";
+import BoiteManuelleProductDetail from "./pages/categories/BoiteManuelleProductDetail";
 
 const queryClient = new QueryClient();
 
@@ -66,9 +68,6 @@ const App = () => (
           {/* Multigrade Line Routes */}
           <Route path="/produits/multigrade-line/vehicules" element={<MultigradeLineVehicules />} />
           <Route path="/produits/multigrade-line/vehicules/:productId" element={<MultigradeProductDetail />} />
-          {/* Huile et Additifs pour Freins Routes (Main category with subcategories) */}
-          <Route path="/produits/huile-additifs-freins/huile-frein-additifs" element={<div>Huile de Frein et Additifs</div>} />
-          <Route path="/produits/huile-additifs-freins/additifs-produits-chimiques" element={<div>Additifs et Produits Chimiques</div>} />
           {/* Standalone Category Routes */}
           <Route path="/produits/poids-lourds" element={<PoidsLourds />} />
           <Route path="/produits/poids-lourds/:productId" element={<PoidsLourdsProductDetail />} />
@@ -78,7 +77,8 @@ const App = () => (
           <Route path="/produits/machines-agricoles" element={<div>Machines Agricoles</div>} />
           <Route path="/produits/boites-automatiques" element={<BoitesAutomatiques />} />
           <Route path="/produits/boites-automatiques/:productId" element={<BoitesAutomatiquesProductDetail />} />
-          <Route path="/produits/boite-manuelle" element={<div>Boite Manuelle</div>} />
+          <Route path="/produits/boite-manuelle" element={<BoiteManuelle />} />
+          <Route path="/produits/boite-manuelle/:productId" element={<BoiteManuelleProductDetail />} />
           <Route path="/produits/antigel" element={<Antigel />} />
           <Route path="/produits/antigel/:productId" element={<AntigelProductDetail />} />
           <Route path="/produits/graisse" element={<Graisse />} />
