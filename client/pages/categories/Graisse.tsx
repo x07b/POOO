@@ -6,22 +6,22 @@ import { ChevronLeft, ChevronRight, Droplets, Shield, Cog, Wrench, Check } from 
 export default function Graisse() {
   const products = [
     {
-      id: "dinoil-grease-calcium",
-      name: "DINOIL GREASE CALCIUM NLGI 2",
-      code: "NLGI 2",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F367800b539f442f7b8aca37c33d3b377%2Fd116b796ceca4bb1927a5a1da4a1a57d?format=webp&width=800"
-    },
-    {
       id: "dinoil-grease-graphite",
-      name: "DINOIL GREASE GRAPHITE NLGI 2",
-      code: "NLGI 2",
+      name: "DINOIL GRAPHITE GREASE",
+      code: "4623",
       image: "https://cdn.builder.io/api/v1/image/assets%2F367800b539f442f7b8aca37c33d3b377%2F9ab7e877c8b6473ba1097019ac00dfec?format=webp&width=800"
     },
     {
       id: "dinoil-grease-lithium",
-      name: "DINOIL GREASE LITHIUM NLGI 2",
-      code: "NLGI 2",
+      name: "DINOIL LITHIUM GREASE 00/0/1/2/3",
+      code: "4630",
       image: "https://cdn.builder.io/api/v1/image/assets%2F367800b539f442f7b8aca37c33d3b377%2F0aa3b7095d2f408fb2c2ac36c62881e9?format=webp&width=800"
+    },
+    {
+      id: "dinoil-grease-calcium",
+      name: "DINOIL MULTI PURPOSE CALCIUM 1/2/3",
+      code: "4647",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F367800b539f442f7b8aca37c33d3b377%2Fd116b796ceca4bb1927a5a1da4a1a57d?format=webp&width=800"
     }
   ];
 
