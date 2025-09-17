@@ -17,5 +17,15 @@ export function createServer() {
 
   app.get("/api/demo", handleDemo);
 
+  // Pass-through for non-API routes when used as a sub-app (e.g., in Vite dev)
+  // - Unknown API routes: return 404 JSON
+  // - Non-API routes: call next() so Vite can serve index.html and assets
+  app.use((req, res, next) => {
+    if (req.path.startsWith("/api") || req.path.startsWith("/health")) {
+      return res.status(404).json({ error: "API endpoint not found" });
+    }
+    next();
+  });
+
   return app;
 }
