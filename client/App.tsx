@@ -31,6 +31,8 @@ import MultigradeProductDetail from "./pages/categories/MultigradeProductDetail"
 import MotoSeaEngines from "./pages/categories/MotoSeaEngines";
 import MotoSeaEnginesProductDetail from "./pages/categories/MotoSeaEnginesProductDetail";
 import PoidsLourdsProductDetail from "./pages/categories/PoidsLourdsProductDetail";
+import Graisse from "./pages/categories/Graisse";
+import GraisseProductDetail from "./pages/categories/GraisseProductDetail";
 import Antigel from "./pages/categories/Antigel";
 import AntigelProductDetail from "./pages/categories/AntigelProductDetail";
 
@@ -76,7 +78,8 @@ const App = () => (
           <Route path="/produits/boite-manuelle" element={<div>Boite Manuelle</div>} />
           <Route path="/produits/antigel" element={<Antigel />} />
           <Route path="/produits/antigel/:productId" element={<AntigelProductDetail />} />
-          <Route path="/produits/graisse" element={<div>Graisse</div>} />
+          <Route path="/produits/graisse" element={<Graisse />} />
+          <Route path="/produits/graisse/:productId" element={<GraisseProductDetail />} />
           {/* Legacy routes for existing functionality */}
           <Route path="/produits/additifs" element={<Additifs />} />
           <Route path="/produits/additifs/:productId" element={<ProductDetail />} />
