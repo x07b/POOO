@@ -35,6 +35,8 @@ import Graisse from "./pages/categories/Graisse";
 import GraisseProductDetail from "./pages/categories/GraisseProductDetail";
 import Antigel from "./pages/categories/Antigel";
 import AntigelProductDetail from "./pages/categories/AntigelProductDetail";
+import BoitesAutomatiques from "./pages/categories/BoitesAutomatiques";
+import BoitesAutomatiquesProductDetail from "./pages/categories/BoitesAutomatiquesProductDetail";
 
 const queryClient = new QueryClient();
 
