@@ -82,8 +82,8 @@ export function Footer() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail size={20} className="text-promokar-gold" />
-                  <a href="mailto:contact@promokar.tn" className="text-gray-300 hover:text-promokar-gold transition-colors duration-300">
-                    contact@promokar.tn
+                  <a href="mailto:contact@promokar.net" className="text-gray-300 hover:text-promokar-gold transition-colors duration-300">
+                    contact@promokar.net
                   </a>
                 </div>
               </div>
