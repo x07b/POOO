@@ -40,17 +40,6 @@ export default function Produits() {
       path: "/produits/multigrade-line/vehicules",
       image: "https://cdn.builder.io/api/v1/image/assets%2F367800b539f442f7b8aca37c33d3b377%2Fdfdd48596d8e4517acb1cf22439b2fa9?format=webp&width=800"
     },
-    // Huile et Additifs pour Freins categories
-    {
-      title: "HUILE DE FREIN ET ADDITIFS",
-      path: "/produits/huile-additifs-freins/huile-frein-additifs",
-      image: "https://images.pexels.com/photos/3642618/pexels-photo-3642618.jpeg"
-    },
-    {
-      title: "ADDITIFS ET PRODUITS CHIMIQUES",
-      path: "/produits/huile-additifs-freins/additifs-produits-chimiques",
-      image: "https://images.pexels.com/photos/4116171/pexels-photo-4116171.jpeg"
-    },
     // Standalone categories
     {
       title: "POIDS LOURDS",
