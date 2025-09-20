@@ -2,6 +2,7 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, Snowflake, Shield, Zap, Award, Check, Droplets } from "lucide-react";
+import { SEO } from "../../components/SEO";
 
 export default function Antigel() {
   const products = [
@@ -46,6 +47,7 @@ export default function Antigel() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO title="Antigel Dinoil Tunisie" description="Liquides antigel G11/G12/G13 pour systèmes de refroidissement. Protection -70°C, anticorrosion, aluminium." keywords={["antigel tunisie","liquide de refroidissement","g12","g13","promokar","dinoil"]} />
       <Header />
 
       <section className="relative bg-gradient-to-br from-[#02173C] to-[#02173C]/90 text-white py-20 overflow-hidden">
