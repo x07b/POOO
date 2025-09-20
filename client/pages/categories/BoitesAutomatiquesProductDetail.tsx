@@ -332,6 +332,7 @@ export default function BoitesAutomatiquesProductDetail() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO title={product.name} description={product.description} image={product.image} type="product" keywords={["ATF","boite automatique","dct","cvt","psf","dinoil","promokar","tunisie"]} jsonLd={{"@context":"https://schema.org","@type":"Product",name: product.name,image: product.image ? [product.image] : undefined,description: product.description,sku: product.code,brand: {"@type":"Brand", name:"DINOIL"}}} />
       <Header />
 
       <section className="relative bg-gradient-to-br from-[#02173C] to-[#02173C]/90 text-white py-20 overflow-hidden">
