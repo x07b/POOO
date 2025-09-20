@@ -132,6 +132,7 @@ export default function BoiteManuelleProductDetail() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO title={product.name} description={product.description} image={product.image} type="product" keywords={["huile boite manuelle","gear oil","gl5","75w90","80w90","85w140","promokar","dinoil","tunisie"]} jsonLd={{"@context":"https://schema.org","@type":"Product",name: product.name,image: product.image ? [product.image] : undefined,description: product.description,sku: product.code,brand: {"@type":"Brand", name:"DINOIL"}}} />
       <Header />
 
       <section className="relative bg-gradient-to-br from-[#02173C] to-[#02173C]/90 text-white py-20 overflow-hidden">
