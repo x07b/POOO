@@ -2,6 +2,7 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, Cog, Shield, Droplets, Award } from "lucide-react";
+import { SEO } from "../../components/SEO";
 
 export default function BoiteManuelle() {
   type Product = {
@@ -49,6 +50,7 @@ export default function BoiteManuelle() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO title="Boîte Manuelle – Huiles de transmission" description="Huiles de boîte manuelle et différentiel: 75W80 LDC, 75W90 Synth, 80W90 GL-5, 85W140 GL-5. API GL-4/GL-5, ZF, MAN." keywords={["huile boite manuelle","75w80","75w90","80w90","85w140","gl5","promokar","dinoil","tunisie"]} />
       <Header />
 
       <section className="relative bg-gradient-to-br from-[#02173C] to-[#02173C]/90 text-white py-20 overflow-hidden">
