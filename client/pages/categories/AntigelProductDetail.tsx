@@ -139,6 +139,7 @@ export default function AntigelProductDetail() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO title={product.name} description={product.description} image={product.image} type="product" keywords={["antigel","liquide de refroidissement","g11","g12","g13","promokar","dinoil","tunisie"]} jsonLd={{"@context":"https://schema.org","@type":"Product",name: product.name,image: product.image ? [product.image] : undefined,description: product.description,sku: product.code,brand: {"@type":"Brand", name:"DINOIL"}}} />
       <Header />
 
       <section className="relative bg-gradient-to-br from-[#02173C] to-[#02173C]/90 text-white py-20 overflow-hidden">
