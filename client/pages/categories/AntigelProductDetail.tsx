@@ -2,6 +2,7 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { Link, useParams } from "react-router-dom";
 import { ChevronLeft, ChevronRight, Snowflake, Shield, Star, Check, Package, FileText } from "lucide-react";
+import { SEO } from "../../components/SEO";
 
 export default function AntigelProductDetail() {
   const { productId } = useParams();
