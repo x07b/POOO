@@ -2,6 +2,7 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { Link } from "react-router-dom";
 import { Trophy, Car, Bike, Ship, Factory, Truck, Cog, Droplets, Wrench, Award, Clock, Shield, ArrowRight, MapPin } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 export default function Produits() {
   // Flattened categories with combined titles
@@ -103,8 +104,14 @@ export default function Produits() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Catalogue produits lubrifiants Dinoil Tunisie"
+        description="Découvrez toute la gamme PROMOKAR: huiles moteur, ATF, boîtes manuelles, antigel, graisse, poids lourds et industriels en Tunisie."
+        keywords={["lubrifiant tunisie","dinoil","promokar","huile moteur","atf","boite manuelle","antigel","graisse","poids lourds","lubrifiants industriels"]}
+        type="website"
+      />
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#02173C] to-[#02173C]/90 text-white py-20 overflow-hidden">
         <div className="absolute inset-0">
