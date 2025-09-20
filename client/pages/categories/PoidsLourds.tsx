@@ -2,6 +2,7 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, ArrowRight, Trophy, Truck, Shield, Star, Zap, Award, Check } from "lucide-react";
+import { SEO } from "../../components/SEO";
 
 export default function PoidsLourds() {
   const poidsLourdsProducts = [
@@ -65,8 +66,9 @@ export default function PoidsLourds() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO title="Huiles Poids Lourds Dinoil" description="Huiles moteur poids lourds: 5W30, 10W40 SHPD/UHPDO, low SAPS. Normes API/ACEA, constructeurs européens." keywords={["huile poids lourds","diesel heavy duty","5w30 truck","10w40 truck","promokar","dinoil"]} />
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#02173C] to-[#02173C]/90 text-white py-20 overflow-hidden">
         <div className="absolute inset-0">
