@@ -2,6 +2,7 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { Link, useParams } from "react-router-dom";
 import { ChevronLeft, ChevronRight, ArrowRight, Trophy, Car, Shield, Star, Zap, Award, Check, Package, FileText, Truck } from "lucide-react";
+import { SEO } from "../../components/SEO";
 
 export default function PoidsLourdsProductDetail() {
   const { productId } = useParams();
@@ -167,8 +168,9 @@ export default function PoidsLourdsProductDetail() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO title={product.name} description={product.description} image={product.image} type="product" keywords={["huile poids lourds","diesel heavy duty","camion","promokar","dinoil","tunisie"]} jsonLd={{"@context":"https://schema.org","@type":"Product",name: product.name,image: product.image ? [product.image] : undefined,description: product.description,sku: product.code,brand: {"@type":"Brand", name:"DINOIL"}}} />
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#02173C] to-[#02173C]/90 text-white py-20 overflow-hidden">
         <div className="absolute inset-0">
