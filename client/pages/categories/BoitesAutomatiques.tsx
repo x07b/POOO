@@ -2,6 +2,7 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, Cog, Shield, Droplets, Award } from "lucide-react";
+import { SEO } from "../../components/SEO";
 
 export default function BoitesAutomatiques() {
   type Product = {
@@ -113,6 +114,7 @@ export default function BoitesAutomatiques() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO title="ATF & Boîtes Automatiques Dinoil" description="Fluides ATF, CVT, DCT/DSG, PSF/GPSF homologués ZF, MB, VW/Audi pour passages souples et protection maximale." keywords={["ATF tunisie","boite automatique","cvt","dct dsg","psf","promokar","dinoil"]} />
       <Header />
 
       <section className="relative bg-gradient-to-br from-[#02173C] to-[#02173C]/90 text-white py-20 overflow-hidden">
